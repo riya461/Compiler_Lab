@@ -1,0 +1,1 @@
+Opr	Reg	Op1	Op2

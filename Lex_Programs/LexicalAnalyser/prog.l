@@ -1,11 +1,19 @@
+
+
 %{
+    // Lexical analyser using Lex 
+    // In var.c program present 
+    // lex prog.l 
+    // gcc lex.yy.x -ll -w
+    // ./a.out
     int comment = 0;
+
 %}
 
 identifier [a-zA-Z][a-zA-Z0-9]*
 
 %%
-#.* {printf("%s This is a preprocessor directive\n",yytext);}
+#.* {printf("%s is a preprocessor directive\n",yytext);}
 
 int | 
 float | 
